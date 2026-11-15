@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه اصلی | PrinterLand</title>
+    <link rel="stylesheet" href="style/font.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/logo/logo1.png"
+    />
+    <link rel="stylesheet" href="style/custom curser.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/hero.css" />
+    <link rel="stylesheet" href="style/Services.css" />
+    <link rel="stylesheet" href="style/process.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/light-mode-fix.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="header-logo" href="index.html">
+          <div class="logo-mark">✦</div>
+          <span class="logo-text">PrinterLand</span>
+        </a>
+        <nav class="header-nav" id="desktopNav">
+          <a class="nav-link active" href="index.html">خانه</a>
+          <a class="nav-link" href="products.html">محصولات</a>
+          <a class="nav-link" href="pages/portfolio.html">نمونه‌کارها</a>
+          <a class="nav-link" href="pages/about.html">درباره ما</a>
+          <a class="nav-link" href="pages/contact.html">تماس با ما</a>
+        </nav>
+        <!-- Dark Mode Toggle -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="تغییر حالت روشنایی"
+        >
+          <span class="theme-icon-desktop">
+            <svg
+              id="themeIconSvg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+          <span class="theme-icon-mobile" aria-hidden="true">🌙</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="منو"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav (outside header, fixed positioned via CSS) -->
+    <nav class="mobile-nav" id="mobileNav">
+      <a class="mobile-nav-link active" href="index.html">خانه</a>
+      <a class="mobile-nav-link" href="products.html">محصولات</a>
+      <a class="mobile-nav-link" href="pages/portfolio.html">نمونه‌کارها</a>
+      <a class="mobile-nav-link" href="pages/about.html">درباره ما</a>
+      <a class="mobile-nav-link" href="pages/contact.html">تماس با ما</a>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero" id="hero">
+        <canvas class="hero-particles" id="heroParticles"></canvas>
+
+        <div class="hero-inner">
+          <div class="hero-content">
+            <span class="hero-badge">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 16.5V7.5a2 2 0 0 0-1-1.73l-7-4.04a2 2 0 0 0-2 0l-7 4.04A2 2 0 0 0 3 7.5v9a2 2 0 0 0 1 1.73l7 4.04a2 2 0 0 0 2 0l7-4.04a2 2 0 0 0 1-1.73Z"
+                ></path>
+                <path d="M3.27 6.96 12 12.01l8.73-5.05"></path>
+                <path d="M12 22.08V12"></path>
+              </svg>
+              چاپ سه‌بعدی سفارشی
+            </span>
+
+            <h1 class="hero-title">
+              ایده‌های شما را<br />
+              به <span class="hero-title-accent">واقعیت</span> تبدیل می‌کنیم
+            </h1>
+
+            <p class="hero-desc">
+              ساخت انواع فیگور، دکوری با چاپ سه‌بعدی و رنگ‌آمیزی دستی
+            </p>
+
+            <div class="hero-actions">
+              <a class="hero-btn hero-btn-primary" href="#order-process">
+                ثبت سفارش
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path
+                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="hero-btn hero-btn-secondary"
+                href="pages/portfolio.html"
+              >
+                مشاهده نمونه کارها
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </a>
+            </div>
+
+            <ul class="hero-features">
+              <li class="hero-feature">
+                <span class="hero-feature-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                </span>
+                <div>
+                  <span class="hero-feature-title">کیفیت بالا</span>
+                  <span class="hero-feature-sub">چاپ دقیق و تمیز</span>
+                </div>
+              </li>
+              <li class="hero-feature">
+                <span class="hero-feature-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="13.5" cy="6.5" r=".5"></circle>
+                    <circle cx="17.5" cy="10.5" r=".5"></circle>
+                    <circle cx="8.5" cy="7.5" r=".5"></circle>
+                    <circle cx="6.5" cy="12.5" r=".5"></circle>
+                    <path
+                      d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2Z"
+                    ></path>
+                  </svg>
+                </span>
+                <div>
+                  <span class="hero-feature-title">رنگ‌آمیزی دستی</span>
+                  <span class="hero-feature-sub">جزئیات و کیفیت</span>
+                </div>
+              </li>
+              <li class="hero-feature">
+                <span class="hero-feature-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon
+                      points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                    ></polygon>
+                  </svg>
+                </span>
+                <div>
+                  <span class="hero-feature-title">تحویل سریع</span>
+                  <span class="hero-feature-sub">در کمترین زمان</span>
+                </div>
+              </li>
+              <li class="hero-feature">
+                <span class="hero-feature-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"
+                    ></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </span>
+                <div>
+                  <span class="hero-feature-title">ضمانت کیفیت</span>
+                  <span class="hero-feature-sub">رضایت مشتری</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-glow"></div>
+            <img
+              class="hero-image"
+              src="assets/images/hero/hero.png"
+              alt="فیگور چاپ سه‌بعدی"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="services">
+        <div class="services-header">
+          <span class="services-tag">خدمات ما</span>
+          <h2 class="services-title">
+            خدماتی که با دقت و <span>کیفیت</span> ارائه می‌دهیم
+          </h2>
+          <p class="services-desc">
+            از چاپ سه‌بعدی تا رنگ‌آمیزی دستی، همه چیز برای خلق بهترین‌ها
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- کارت ۱: چاپ سه‌بعدی -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div class="service-image">
+              <img
+                src="assets/images/Services/%23U0686%23U0627%23U067e%20%23U0633%23U0647%20%23U0628%23U0639%23U062f%23U06cc.png"
+                alt="چاپ سه‌بعدی"
+              />
+            </div>
+            <h3 class="service-title">چاپ سه‌بعدی</h3>
+            <p class="service-text">
+              چاپ انواع فیگور، قطعات ماکت و محصولات سفارشی با استفاده از
+              جدیدترین تکنولوژی‌های روز دنیا.
+            </p>
+          </div>
+
+          <!-- کارت ۲: رنگ‌آمیزی دستی -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="13.5" cy="6.5" r="0.5" />
+                <circle cx="17.5" cy="10.5" r="0.5" />
+                <circle cx="8.5" cy="7.5" r="0.5" />
+                <circle cx="6.5" cy="12.5" r="0.5" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.992 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="service-image">
+              <img
+                src="assets/images/Services/%23U0631%23U0646%23U06af%20%23U0627%23U0645%23U06cc%23U0632%23U06cc%20%23U062f%23U0633%23U062a%23U06cc.png"
+                alt="رنگ‌آمیزی دستی"
+              />
+            </div>
+            <h3 class="service-title">رنگ‌آمیزی دستی</h3>
+            <p class="service-text">
+              رنگ‌آمیزی تمامی محصولات به صورت دستی با دقت و ظرافت بالا برای
+              کیفیتی بی‌نظیر و ماندگار.
+            </p>
+          </div>
+
+          <!-- کارت ۳: مشارش اختصاصی -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                />
+              </svg>
+            </div>
+            <div class="service-image">
+              <img
+                src="assets/images/Services/%23U0645%23U0634%23U0627%23U0631%23U0634%20%23U0627%23U062e%23U062a%23U0635%23U0627%23U0635%23U06cc.png"
+                alt="مشارش اختصاصی"
+              />
+            </div>
+            <h3 class="service-title">سفارش اختصاصی</h3>
+            <p class="service-text">
+              اگر مدل یا طرح خاصی در دهن دارید، فایل یا تصویر خود را ارسال کنید
+              تا دقیقاً مطابق نیاز شما ساخته شود.
+            </p>
+          </div>
+
+          <!-- کارت ۴: مشاوره رایگان -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                />
+              </svg>
+            </div>
+            <!-- عکس مربوط به این کارت را اینجا قرار دهید -->
+            <div class="service-image">
+              <img
+                src="assets/images/Services/%23U0645%23U0634%23U0627%23U0648%23U0631%23U0647%20%23U0631%23U0627%23U06cc%23U06af%23U0627%23U0646.png"
+                alt="مشاوره رایگان"
+              />
+            </div>
+            <h3 class="service-title">مشاوره رایگان</h3>
+            <p class="service-text">
+              قبل از ثبت سفارش، از طریق تلگرام یا روبیکا با ما در ارتباط باشید و
+              از مشاوره رایگان بهره‌مند شوید.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <!-- ===== ORDER PROCESS SECTION ===== -->
+      <section class="process-section" id="order-process">
+        <div class="process-container">
+          <div class="process-header">
+            <h2 class="process-title">فرآیند ثبت سفارش</h2>
+            <p class="process-subtitle">
+              تنها در ۴ مرحله سفارش خود را ثبت کنید.
+            </p>
+          </div>
+
+          <div class="process-cards">
+            <!-- کارت ۱ -->
+            <div class="process-card">
+              <span class="process-step-number">۱</span>
+              <div class="process-card-image">
+                <!-- عکس خودتون رو اینجا جایگزین کنید -->
+                <img
+                  src="assets/images/products/%23U0627%23U0631%23U0633%23U0627%23U0644%20%23U0637%23U0631%23U062d.png"
+                  alt="ارسال طرح"
+                />
+              </div>
+              <h3 class="process-card-title">ارسال طرح</h3>
+              <p class="process-card-text">
+                طرح یا مدل مورد نظر خود را از طریق تلگرام یا روبیکا برای ما
+                ارسال کنید.
+              </p>
+            </div>
+
+            <span class="process-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </span>
+
+            <!-- کارت ۲ -->
+            <div class="process-card">
+              <span class="process-step-number">۲</span>
+              <div class="process-card-image">
+                <img
+                  src="assets/images/products/%23U0627%23U0639%23U0644%23U0627%23U0645%20%23U0642%23U06cc%23U0645%23U062a.png"
+                  alt="اعلام قیمت"
+                />
+              </div>
+              <h3 class="process-card-title">اعلام قیمت</h3>
+              <p class="process-card-text">
+                پس از بررسی طرح، قیمت نهایی و مدت زمان آماده‌سازی به شما اعلام
+                می‌شود.
+              </p>
+            </div>
+
+            <span class="process-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </span>
+
+            <!-- کارت ۳ -->
+            <div class="process-card">
+              <span class="process-step-number">۳</span>
+              <div class="process-card-image">
+                <img
+                  src="assets/images/products/%23U062c%23U0627%23U067e.png"
+                  alt="چاپ و رنگ‌آمیزی"
+                />
+              </div>
+              <h3 class="process-card-title">چاپ و رنگ‌آمیزی</h3>
+              <p class="process-card-text">
+                مدل شما با دقت چاپ شده و سپس به‌صورت دستی رنگ‌آمیزی و جزئیات
+                نهایی روی آن انجام می‌شود.
+              </p>
+            </div>
+
+            <span class="process-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </span>
+
+            <!-- کارت ۴ -->
+            <div class="process-card">
+              <span class="process-step-number">۴</span>
+              <div class="process-card-image">
+                <img src="assets/images/products/%23U0627%23U0631%23U0633%23U0627%23U0644.png" alt="ارسال محصول" />
+              </div>
+              <h3 class="process-card-title">ارسال محصول</h3>
+              <p class="process-card-text">
+                پس از اتمام کار، محصول با بسته‌بندی ایمن و از طریق پست برای شما
+                ارسال می‌شود.
+              </p>
+            </div>
+          </div>
+          <div class="process-order-btn-wrap">
+            <button class="process-order-btn" id="orderBtn">ثبت سفارش</button>
+          </div>
+          <div class="process-footer">
+            <span class="process-footer-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 12l2 2 4-4" />
+                <path
+                  d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"
+                />
+              </svg>
+            </span>
+            <p>
+              تمامی محصولات با بهترین کیفیت چاپ و رنگ‌آمیزی شده و با بسته‌بندی
+              ایمن ارسال می‌شوند.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <!-- ===== ORDER MODAL ===== -->
+      <div class="order-modal-overlay" id="orderModalOverlay">
+        <div class="order-modal">
+          <button
+            class="order-modal-close"
+            id="orderModalClose"
+            aria-label="بستن"
+          >
+            ✕
+          </button>
+          <h3 class="order-modal-title">ثبت سفارش</h3>
+          <p class="order-modal-subtitle">
+            از طریق یکی از پیام‌رسان‌های زیر با ما در ارتباط باشید
+          </p>
+
+          <div class="order-modal-cards">
+            <!-- تلگرام -->
+            <div class="order-app-card">
+              <span class="order-app-icon telegram">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M21.05 2.93 2.6 10.1c-1.27.5-1.26 1.2-.23 1.52l4.73 1.48 1.83 5.55c.22.6.37.84.76.84.36 0 .52-.16.72-.36l1.97-1.9 4.1 3.02c.75.42 1.3.2 1.49-.7l2.69-12.7c.27-1.12-.42-1.62-1.61-1.12z"
+                  />
+                </svg>
+              </span>
+              <span class="order-app-name">تلگرام</span>
+              <p class="order-app-text">
+                برای ثبت سفارش به آیدی زیر پیام بدید:
+              </p>
+              <span class="order-app-id">@Your_User_Name</span>
+            </div>
+
+            <!-- روبیکا -->
+            <div class="order-app-card">
+              <span class="order-app-icon rubika">
+                <img src="./assets/icons/minimal.png" alt="rubika" />
+              </span>
+              <span class="order-app-name">روبیکا</span>
+              <p class="order-app-text">
+                برای ثبت سفارش به آیدی زیر پیام بدید:
+              </p>
+              <span class="order-app-id">@Your_User_Name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!doctype html>
+      <html lang="fa" dir="rtl">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>FAQ Section</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap"
+            rel="stylesheet"
+          />
+          <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+          <section class="faq-section">
+            <div class="faq-glow top-right"></div>
+            <div class="faq-glow bottom-left"></div>
+
+            <div class="faq-container">
+              <div class="faq-header">
+                <div class="faq-badge">✦ FAQ</div>
+                <h2 class="faq-title">سوالات متداول</h2>
+                <p class="faq-paragraph">
+                  پاسخ سوالاتی که بیشتر از ما پرسیده می‌شود
+                </p>
+              </div>
+
+              <div class="faq-list">
+                <div class="faq-item" data-index="0">
+                  <span class="faq-number">01</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">چاپ سه‌بعدی چقدر زمان میبرد؟</h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بستگی به طرح شما دارد ولی در حالت عادی 2 ساعت.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="1">
+                  <span class="faq-number">02</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">آیا رنگ‌آمیزی دستی است؟</h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بله، تمام محصولات بعد از چاپ به صورت کامل دستی رنگ
+                        می‌شوند.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="2">
+                  <span class="faq-number">03</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">امکان سفارش اختصاصی هست؟</h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بله، تمام محصولات ما به‌صورت اختصاصی و مطابق سفارش شما
+                        تولید می‌شوند؛ از طرح و رنگ‌بندی گرفته تا ابعاد، همه چیز
+                        را بر اساس نیاز شما می‌سازیم.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="3">
+                  <span class="faq-number">04</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">فایل STL هم چاپ می‌کنید؟</h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بله، شما می‌توانید فایل STL خودتان را برای ما ارسال کنید
+                        تا چاپ شود. کافیست فایل را از طریق تلگرام یا روبیکا
+                        برایمان بفرستید.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="4">
+                  <span class="faq-number">05</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">
+                      قیمت‌ گذاری چطور انجام می‌شود و پرداخت به چه صورت است؟
+                    </h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        چون تمام کارها به‌صورت اختصاصی انجام می‌شود، قیمت هر
+                        سفارش بر اساس ابعاد، جزئیات طرح و میزان رنگ‌آمیزی تعیین
+                        می‌شود. بعد از ثبت سفارش، پیش‌فاکتور برایتان ارسال
+                        می‌شود و پرداخت معمولاً به‌صورت واریز مستقیم انجام
+                        می‌گیرد.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="5">
+                  <span class="faq-number">06</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">
+                      ارسال چطور انجام می‌شود و چقدر طول می‌کشد؟
+                    </h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بعد از تکمیل ساخت و رنگ‌آمیزی، اگر در تهران هستید سفارش
+                        شما از طریق اسنپ ارسال می‌شود و هزینه‌ی ارسال بر عهده‌ی
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="6">
+                  <span class="faq-number">07</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">
+                      از چه جنس یا متریالی برای چاپ استفاده می‌کنید؟
+                    </h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        چاپ محصولات با فیلامنت PLA انجام می‌شود که مقاوم، بادوام
+                        و مناسب برای رنگ‌آمیزی دستی است.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="7">
+                  <span class="faq-number">08</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">
+                      چطور از محصول رنگ‌شده نگهداری کنیم؟
+                    </h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        رنگ‌آمیزی محصولات با رنگ اکریلیک انجام می‌شود، بنابراین
+                        بهتر است محصول را دور از نور مستقیم آفتاب و رطوبت نگه
+                        دارید و برای تمیز کردن فقط از پارچه‌ی نرم و خشک استفاده
+                        کنید تا رنگ آسیب نبیند یا کدر نشود.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="8">
+                  <span class="faq-number">09</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">
+                      امکان مرجوعی یا تعویض کالا وجود دارد؟
+                    </h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بله، در صورت وجود ایراد ساخت، آسیب در حمل‌ونقل یا مغایرت
+                        با سفارش شما، امکان تعویض یا مرجوعی کالا وجود دارد.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-item" data-index="9">
+                  <span class="faq-number">10</span>
+                  <div class="faq-question-row">
+                    <h3 class="faq-question">
+                      می‌توانم نمونه کارهای قبلی را ببینم؟
+                    </h3>
+                    <div class="faq-plus">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-inner">
+                      <div class="faq-line"></div>
+                      <p class="faq-answer">
+                        بله، نمونه کارهای قبلی در صفحه نمونه کار موجود است و
+                        می‌توانید قبل از سفارش آن‌ها را مشاهده کنید.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-cta">
+                <div class="faq-cta-topline"></div>
+                <div class="faq-cta-glow tr"></div>
+                <div class="faq-cta-glow bl"></div>
+                <span class="faq-cta-corner tl"></span>
+                <span class="faq-cta-corner tr"></span>
+
+                <div class="faq-cta-content">
+                  <div class="faq-cta-icon">💬</div>
+                  <h4 class="faq-cta-title">سوال دیگری داری؟</h4>
+                  <p class="faq-cta-subtitle">
+                    اگر پاسخ سؤال خود را پیدا نکردی، تیم ما آماده است تا در
+                    سریع‌ترین زمان ممکن بهت کمک کند.
+                  </p>
+                  <a href="./pages/contact.html" class="faq-cta-btn">
+                    <span>تماس با ما</span>
+                    <span class="faq-cta-arrow">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </span>
+                  </a>
+
+                  <div class="faq-cta-trust">
+                    <span>💬 پاسخ سریع</span>
+                    <span>🕒 کمتر از ۲۴ ساعت</span>
+                    <span>❤️ پشتیبانی واقعی</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <script src="script.js"></script>
+        </body>
+      </html>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="footer-decor"></div>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- ستون برند -->
+          <div class="footer-col footer-col-brand">
+            <div class="footer-brand-logo">
+              <span class="logo-mark">✦</span>
+              <div>
+                <div class="footer-brand-title"><span>PrinterLand</span></div>
+                <div class="footer-brand-subtitle">
+                  چاپ سه‌بعدی و رنگ‌آمیزی حرفه‌ای
+                </div>
+              </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-brand-text">
+              ما ایده‌های شما را با دقت و کیفیت بالا چاپ و رنگ‌آمیزی می‌کنیم و
+              محصولی منحصربه‌فرد به شما تحویل می‌دهیم.
+            </p>
+          </div>
+
+          <!-- ستون دسترسی سریع -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">دسترسی سریع</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">
+                  خانه
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="products.html">
+                  محصولات
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#order-process">
+                  فرآیند ثبت سفارش
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="pages/portfolio.html">
+                  نمونه کارها
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="pages/about.html">
+                  درباره ما
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="pages/contact.html">
+                  تماس با ما
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ارتباط با ما -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">ارتباط با ما</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span
+                  class="footer-contact-icon"
+                  style="
+                    background: rgba(34, 158, 217, 0.15);
+                    border-color: rgba(34, 158, 217, 0.4);
+                  "
+                >
+                  <svg viewBox="0 0 24 24" fill="#229ed9">
+                    <path
+                      d="M21.05 2.93 2.6 10.1c-1.27.5-1.26 1.2-.23 1.52l4.73 1.48 1.83 5.55c.22.6.37.84.76.84.36 0 .52-.16.72-.36l1.97-1.9 4.1 3.02c.75.42 1.3.2 1.49-.7l2.69-12.7c.27-1.12-.42-1.62-1.61-1.12z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="footer-contact-name">تلگرام</div>
+                  <div class="footer-contact-id">@Your_User_Name</div>
+                </div>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon">
+                  <svg viewBox="0 0 24 24" fill="#4da3ff">
+                    <path
+                      d="M21.05 2.93 2.6 10.1c-1.27.5-1.26 1.2-.23 1.52l4.73 1.48 1.83 5.55c.22.6.37.84.76.84.36 0 .52-.16.72-.36l1.97-1.9 4.1 3.02c.75.42 1.3.2 1.49-.7l2.69-12.7c.27-1.12-.42-1.62-1.61-1.12z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="footer-contact-name">روبیکا</div>
+                  <div class="footer-contact-id">@Your_User_Name</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© ۲۰۲۶ <strong>PrinterLand</strong>. تمامی حقوق محفوظ است.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/custom curser.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <button id="topBtn">↑</button>
+  </body>
+</html>

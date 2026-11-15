@@ -1,0 +1,815 @@
+/* ===== Services Section ===== */
+.services {
+    background: #101827;
+    padding: 90px 24px;
+    direction: rtl;
+  }
+  
+  .services-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
+  
+  .services-tag {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  
+  .services-title {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+  
+  .services-title span {
+    color: #2563eb;
+  }
+  
+  .services-desc {
+    color: #94a3b8;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: #141b2d;
+    border: 1px solid #2563eb20;
+    border-radius: 20px;
+    padding: 28px 24px 32px;
+    text-align: center;
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  
+    /* Scroll-in animation state */
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .service-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 0 35px #2563eb40;
+  }
+  
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1c2640;
+    border: 1px solid #2563eb40;
+    border-radius: 14px;
+    transform: rotate(45deg);
+    transition: transform 0.35s ease;
+  }
+  
+  .service-icon svg {
+    transform: rotate(-45deg);
+    width: 24px;
+    height: 24px;
+    stroke: #2563eb;
+    transition: transform 0.35s ease;
+  }
+  
+  .service-card:hover .service-icon svg {
+    transform: rotate(-45deg) scale(1.2);
+  }
+  
+  /* محل قرار دادن عکس محصول/خدمت - خودتان عکس را اینجا اضافه کنید */
+  .service-image {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c1320;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .service-title {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+  
+  .service-text {
+    color: #94a3b8;
+    font-size: 14.5px;
+    line-height: 1.9;
+    margin: 0;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .services-title {
+      font-size: 26px;
+    }
+  }
+
+  /* ==========================================================
+   WHY US SECTION — "چرا ما؟"
+   ========================================================== */
+
+.wu-sec {
+  position: relative;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #090b11;
+  direction: rtl;
+}
+
+/* ---- دو Glow پس‌زمینه ---- */
+.wu-sec::before,
+.wu-sec::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wu-sec::before {
+  width: 550px;
+  height: 550px;
+  top: -180px;
+  right: -140px;
+  background: #2563eb;
+  filter: blur(180px);
+  opacity: 0.1;
+}
+
+.wu-sec::after {
+  width: 400px;
+  height: 400px;
+  bottom: -140px;
+  left: -120px;
+  background: #3b82f6;
+  filter: blur(160px);
+  opacity: 0.06;
+}
+
+/* ---- Grid Pattern ---- */
+.wu-grid-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.wu-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Header ---- */
+.wu-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: #0f1626;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.12);
+  color: #eaf1ff;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.wu-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3b82f6;
+  box-shadow: 0 0 8px #3b82f6;
+}
+
+.wu-title {
+  margin: 32px 0 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #f8fafc;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
+}
+
+.wu-title-grad {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.wu-desc {
+  margin: 26px auto 0;
+  max-width: 720px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #a5a5a5;
+
+  opacity: 0;
+  transition: opacity 0.7s ease 0.2s;
+}
+
+.wu-sec.in-view .wu-badge,
+.wu-sec.in-view .wu-title,
+.wu-sec.in-view .wu-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Cards ---- */
+.wu-cards {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 290px));
+  justify-content: center;
+  gap: 24px;
+}
+
+.wu-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  height: 390px;
+  border-radius: 28px;
+  background: #0f1422;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  padding: 42px 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.wu-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.wu-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 0 45px rgba(37, 99, 235, 0.2);
+}
+
+/* شماره‌ی بزرگ محو در پس‌زمینه‌ی کارت */
+.wu-card-num {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0.03;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.wu-card-icon {
+  position: relative;
+  z-index: 1;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  color: #3b82f6;
+  margin-bottom: 24px;
+  transition: transform 0.35s ease;
+}
+
+.wu-card:hover .wu-card-icon {
+  transform: rotate(10deg) scale(1.08);
+}
+
+.wu-card-title {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 14px;
+}
+
+.wu-card-divider {
+  position: relative;
+  z-index: 1;
+  width: 55px;
+  height: 3px;
+  border-radius: 999px;
+  background: #3b82f6;
+  margin-bottom: 16px;
+}
+
+.wu-card-text {
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  line-height: 34px;
+  color: #b5b5b5;
+  margin: 0;
+}
+
+/* ---- Bottom Bar ---- */
+.wu-bottom {
+  margin-top: 40px;
+  min-height: 165px;
+  border-radius: 30px;
+  background: #101624;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 28px 40px;
+}
+
+.wu-bottom-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 1 220px;
+  transition: color 0.25s ease;
+}
+
+.wu-bottom-item:hover {
+  color: #3b82f6;
+}
+
+.wu-bottom-item:hover .wu-bottom-title {
+  color: #3b82f6;
+}
+
+.wu-bottom-icon {
+  flex-shrink: 0;
+  font-size: 58px;
+  line-height: 1;
+}
+
+.wu-bottom-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 4px;
+  transition: color 0.25s ease;
+}
+
+.wu-bottom-text {
+  font-size: 14px;
+  color: #a3a3a3;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.wu-bottom-sep {
+  width: 1px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .wu-cards {
+    grid-template-columns: repeat(2, minmax(0, 290px));
+  }
+  .wu-bottom-sep {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .wu-title {
+    font-size: 38px;
+  }
+  .wu-desc {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+  .wu-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wu-cards {
+    grid-template-columns: minmax(0, 340px);
+  }
+  .wu-card {
+    height: auto;
+    min-height: 340px;
+  }
+}
+
+/* ==========================================================
+   LIGHT MODE OVERRIDES
+   بک‌گراند و رنگ‌های این بخش قبلاً هاردکد بودن و به دکمه‌ی
+   تم واکنش نشون نمی‌دادن؛ این بلوک اون‌ها رو برای حالت روشن
+   (body.light-mode) بازنویسی می‌کنه.
+   ========================================================== */
+body.light-mode .wu-sec {
+  background: #f4f7fb;
+}
+
+body.light-mode .wu-grid-bg {
+  opacity: 0.5;
+}
+
+body.light-mode .wu-badge {
+  background: #ffffff;
+  border-color: rgba(37, 99, 235, 0.25);
+  color: #0f172a;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.08);
+}
+
+body.light-mode .wu-title {
+  color: #0f172a;
+}
+
+body.light-mode .wu-desc {
+  color: #475569;
+}
+
+body.light-mode .wu-card {
+  background: #ffffff;
+  border-color: rgba(37, 99, 235, 0.15);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+}
+
+body.light-mode .wu-card-num {
+  color: #0f172a;
+  opacity: 0.04;
+}
+
+body.light-mode .wu-card-icon {
+  background: rgba(37, 99, 235, 0.06);
+  border-color: rgba(37, 99, 235, 0.15);
+}
+
+body.light-mode .wu-card-title {
+  color: #0f172a;
+}
+
+body.light-mode .wu-card-text {
+  color: #64748b;
+}
+
+body.light-mode .wu-bottom {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.05);
+}
+
+body.light-mode .wu-bottom-title {
+  color: #0f172a;
+}
+
+body.light-mode .wu-bottom-text {
+  color: #64748b;
+}
+
+body.light-mode .wu-bottom-sep {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+/* ==========================================================
+   CONTACT SECTION — "تماس با ما"
+   ========================================================== */
+
+   .contact-sec {
+    position: relative;
+    overflow: hidden;
+    padding: 110px 24px 130px;
+    direction: rtl;
+  }
+  
+  .contact-grid-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 26px 26px;
+    opacity: 0.04;
+    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 40%, transparent 90%);
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 40%, transparent 90%);
+  }
+  
+  .contact-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* ---- Header ---- */
+  .contact-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 56px;
+  }
+  
+  .contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    background: rgba(37, 99, 235, 0.1);
+    backdrop-filter: blur(10px);
+    color: var(--secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .contact-title {
+    font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--clr-text);
+    margin-bottom: 16px;
+  
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
+  }
+  
+  .contact-title-grad {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .contact-desc {
+    font-size: 1rem;
+    color: var(--subtext);
+    line-height: 1.9;
+    max-width: 560px;
+    margin: 0 auto;
+  
+    opacity: 0;
+    transition: opacity 0.7s ease 0.2s;
+  }
+  
+  .contact-sec.in-view .contact-badge,
+  .contact-sec.in-view .contact-title,
+  .contact-sec.in-view .contact-desc {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ---- Cards ---- */
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  
+  .contact-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 40px 28px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+  .contact-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(96, 165, 250, 0.5);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.2);
+  }
+  
+  .contact-card-logo {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.35s ease;
+  }
+  
+  .contact-card:hover .contact-card-logo {
+    transform: scale(1.08);
+  }
+  
+  .contact-card-logo img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+  }
+  
+  .contact-card-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    margin-bottom: 8px;
+  }
+  
+  .contact-card-text {
+    font-size: 0.92rem;
+    color: var(--subtext);
+    margin-bottom: 18px;
+  }
+  
+  .contact-card-id-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    margin-bottom: 22px;
+  }
+  
+  .contact-card-id {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--secondary);
+    direction: ltr;
+  }
+  
+  .contact-copy-btn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .contact-copy-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .contact-copy-btn.copied::after {
+    content: "کپی شد!";
+    position: absolute;
+    bottom: calc(100% + 8px);
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 0.75rem;
+    background: var(--primary);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  
+  .contact-card-btn {
+    display: block;
+    padding: 12px 0;
+    border-radius: 12px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: filter 0.25s ease, transform 0.25s ease;
+  }
+  
+  .contact-card-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+  }
+  
+  /* ---- Responsive ---- */
+  @media (max-width: 640px) {
+    .contact-sec {
+      padding: 80px 18px 100px;
+    }
+    .contact-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ==========================================================
+     LIGHT MODE OVERRIDES
+     ========================================================== */
+  body.light-mode .contact-badge {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: rgba(37, 99, 235, 0.25);
+  }
+  
+  body.light-mode .contact-card {
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, 0.15);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+  }
+  
+  body.light-mode .contact-card-logo {
+    background: rgba(37, 99, 235, 0.05);
+    border-color: rgba(37, 99, 235, 0.12);
+  }
+  
+  body.light-mode .contact-card-id-row {
+    background: rgba(37, 99, 235, 0.06);
+  }

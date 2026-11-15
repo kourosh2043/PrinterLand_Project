@@ -1,0 +1,174 @@
+/* ---- Services section ---- */
+body.light-mode .services {
+  background: #eef2f7;
+}
+
+body.light-mode .service-card {
+  background: #ffffff;
+  border-color: rgba(37, 99, 235, 0.18);
+}
+
+body.light-mode .service-icon {
+  background: #e7edf7;
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+body.light-mode .service-image {
+  background: #e7edf7;
+}
+
+body.light-mode .service-title {
+  color: #0f172a;
+}
+
+body.light-mode .services-title {
+  color: #0f172a;
+}
+
+body.light-mode .service-text,
+body.light-mode .services-desc {
+  color: #475569;
+}
+
+/* ---- Process / order section ---- */
+body.light-mode .process-section {
+  background: linear-gradient(180deg, #ffffff 0%, #eef2f7 100%);
+}
+
+body.light-mode .process-title {
+  background: linear-gradient(180deg, #0f172a 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body.light-mode .process-subtitle,
+body.light-mode .process-card-text,
+body.light-mode .process-footer p,
+body.light-mode .order-modal-subtitle,
+body.light-mode .order-app-text {
+  color: #475569;
+}
+
+body.light-mode .process-card {
+  background: #ffffff;
+  border-color: rgba(37, 99, 235, 0.15);
+  color: #0f172a;
+}
+
+body.light-mode .process-card-image {
+  background: rgba(37, 99, 235, 0.05);
+}
+
+body.light-mode .process-footer {
+  background: rgba(37, 99, 235, 0.04);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .order-modal-overlay {
+  background: rgba(15, 23, 42, 0.45);
+}
+
+body.light-mode .order-modal {
+  background: #ffffff;
+  border-color: rgba(37, 99, 235, 0.15);
+  color: #0f172a;
+}
+
+body.light-mode .order-modal-title {
+  background: linear-gradient(180deg, #0f172a 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body.light-mode .order-modal-close {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #0f172a;
+}
+
+body.light-mode .order-modal-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .order-app-card {
+  background: #f5f8fc;
+  border-color: rgba(37, 99, 235, 0.15);
+  color: #0f172a;
+}
+
+/* ---- Footer ---- */
+body.light-mode .site-footer {
+  background: linear-gradient(180deg, #eef2f7 0%, #ffffff 100%);
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .footer-brand-title,
+body.light-mode .footer-contact-name {
+  color: #0f172a;
+}
+
+body.light-mode .footer-brand-subtitle,
+body.light-mode .footer-brand-text,
+body.light-mode .footer-contact-id,
+body.light-mode .footer-bottom p {
+  color: #475569;
+}
+
+body.light-mode .footer-links a {
+  color: #1e293b;
+}
+
+body.light-mode .footer-bottom {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+/* ---- FAQ section ---- */
+body.light-mode .faq-badge {
+  background: #e7edf7;
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+body.light-mode .faq-paragraph,
+body.light-mode .faq-cta-subtitle,
+body.light-mode .faq-cta-trust {
+  color: #475569;
+}
+
+body.light-mode .faq-item {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+
+body.light-mode .faq-number {
+  color: rgba(15, 23, 42, 0.06);
+}
+
+body.light-mode .faq-answer {
+  color: #475569;
+}
+
+body.light-mode .faq-plus {
+  background: #eef2f7;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+body.light-mode .faq-plus svg {
+  stroke: #0f172a;
+}
+
+body.light-mode .faq-item:hover .faq-plus svg,
+body.light-mode .faq-item.open .faq-plus svg {
+  stroke: #ffffff;
+}
+
+body.light-mode .faq-cta {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .faq-cta-icon {
+  background: #eef2f7;
+  border-color: rgba(0, 0, 0, 0.08);
+}

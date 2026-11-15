@@ -1,0 +1,414 @@
+/* ==========================================================
+   404 PAGE
+   ========================================================== */
+
+   .nf-sec {
+    position: relative;
+    overflow: hidden;
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 24px 60px;
+    background: #090b11;
+    direction: rtl;
+  }
+  
+  /* ---- گرید محو ---- */
+  .nf-grid-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+  
+  /* ---- دو Glow ---- */
+  .nf-glow {
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.18);
+    filter: blur(220px);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .nf-glow-tr {
+    top: -220px;
+    right: -180px;
+  }
+  
+  .nf-glow-bl {
+    bottom: -220px;
+    left: -180px;
+  }
+  
+  .nf-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* ---- انیمیشن ورودی مرحله‌ای ---- */
+  .nf-seq {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.7s cubic-bezier(.22, 1, .36, 1) var(--nf-delay, 0s),
+                transform 0.7s cubic-bezier(.22, 1, .36, 1) var(--nf-delay, 0s);
+  }
+  
+  .nf-sec.nf-loaded .nf-seq {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ---- فیگور ---- */
+  .nf-figure-wrap {
+    position: relative;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+  }
+  
+  .nf-figure-glow {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #2563eb 0%, transparent 70%);
+    filter: blur(180px);
+    opacity: 0.25;
+    z-index: 0;
+  }
+  
+  .nf-figure-img {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 50px 80px rgba(0, 0, 0, 0.45));
+    animation: nf-float 5s ease-in-out infinite;
+  }
+  
+  .nf-figure-fallback {
+    position: relative;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #4da3ff;
+    font-size: 0.85rem;
+    text-align: center;
+    max-width: 220px;
+  }
+  
+  .nf-figure-fallback-icon {
+    font-size: 42px;
+  }
+  
+  @keyframes nf-float {
+    0%   { transform: translateY(-10px); }
+    50%  { transform: translateY(10px); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  /* ---- شکل‌های شناور دور فیگور ---- */
+  .nf-shape {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.08;
+    pointer-events: none;
+  }
+  
+  .nf-shape svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nf-shape-cube {
+    width: 70px;
+    height: 70px;
+    top: 6%;
+    left: 4%;
+    animation: nf-spin 20s linear infinite;
+  }
+  
+  .nf-shape-cylinder {
+    width: 60px;
+    height: 60px;
+    bottom: 10%;
+    left: 8%;
+    animation: nf-spin 25s linear infinite reverse;
+  }
+  
+  .nf-shape-hex {
+    width: 64px;
+    height: 64px;
+    top: 12%;
+    right: 4%;
+    animation: nf-spin 30s linear infinite;
+  }
+  
+  @keyframes nf-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  
+  /* ---- خطوط چاپ پشت فیگور ---- */
+  .nf-print-lines {
+    position: absolute;
+    z-index: 1;
+    top: 18%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  
+  .nf-print-lines span {
+    display: block;
+    height: 2px;
+    background: #ffffff;
+    opacity: 0.12;
+    filter: blur(1px);
+    border-radius: 2px;
+  }
+  
+  /* ---- لایه‌های چاپ زیر فیگور ---- */
+  .nf-print-layers {
+    position: absolute;
+    z-index: 1;
+    bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+  
+  .nf-print-layers span {
+    display: block;
+    width: 160px;
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      #2563eb 0,
+      #2563eb 8px,
+      transparent 8px,
+      transparent 14px
+    );
+    opacity: 0.3;
+    animation: nf-layer-fade 2.4s ease-in-out infinite;
+  }
+  
+  .nf-print-layers span:nth-child(2) {
+    width: 120px;
+    animation-delay: 0.3s;
+  }
+  
+  .nf-print-layers span:nth-child(3) {
+    width: 90px;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes nf-layer-fade {
+    0%, 100% { opacity: 0.1; }
+    50%      { opacity: 0.4; }
+  }
+  
+  /* ---- عدد 404 ---- */
+  .nf-code {
+    font-size: clamp(96px, 18vw, 220px);
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(180deg, #2563eb, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0.9;
+    margin-bottom: 6px;
+  }
+  
+  /* ---- عنوان و توضیح ---- */
+  .nf-title {
+    font-size: clamp(28px, 5vw, 54px);
+    font-weight: 800;
+    color: #f8fafc;
+    margin-bottom: 16px;
+  }
+  
+  .nf-desc {
+    max-width: 620px;
+    margin: 0 auto 40px;
+    line-height: 2;
+    color: #a5a5a5;
+    font-size: 1.02rem;
+  }
+  
+  /* ---- دکمه‌ها ---- */
+  .nf-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 34px;
+  }
+  
+  .nf-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 220px;
+    height: 60px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.98rem;
+    transition: transform 0.3s cubic-bezier(.22, 1, .36, 1),
+                box-shadow 0.3s cubic-bezier(.22, 1, .36, 1);
+  }
+  
+  .nf-btn-primary:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 35px rgba(37, 99, 235, 0.35);
+  }
+  
+  .nf-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 60px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e2e8f0;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nf-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-3px);
+  }
+  
+  /* ---- متن کوچک پایین ---- */
+  .nf-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+  .nf-meta-brand {
+    color: #3b82f6;
+    font-weight: 600;
+  }
+  
+  /* ---- فوتر کوچک ---- */
+  .nf-mini-footer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding: 22px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    background: #090b11;
+  }
+  
+  .nf-mini-footer a {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    transition: color 0.25s ease;
+  }
+  
+  .nf-mini-footer a:hover {
+    color: #3b82f6;
+  }
+  
+  /* ---- ریسپانسیو ---- */
+  @media (max-width: 640px) {
+    .nf-figure-wrap {
+      height: 340px;
+    }
+    .nf-figure-glow {
+      width: 460px;
+      height: 460px;
+    }
+    .nf-actions {
+      flex-direction: column;
+    }
+    .nf-btn-primary,
+    .nf-btn-secondary {
+      width: 100%;
+      max-width: 280px;
+    }
+    .nf-print-lines {
+      display: none;
+    }
+  }
+  
+  /* ==========================================================
+     LIGHT MODE OVERRIDES
+     ========================================================== */
+  body.light-mode .nf-sec {
+    background: #f4f7fb;
+  }
+  
+  body.light-mode .nf-grid-bg {
+    opacity: 0.5;
+  }
+  
+  body.light-mode .nf-title {
+    color: #0f172a;
+  }
+  
+  body.light-mode .nf-desc {
+    color: #475569;
+  }
+  
+  body.light-mode .nf-btn-secondary {
+    border-color: rgba(15, 23, 42, 0.15);
+    color: #0f172a;
+  }
+  
+  body.light-mode .nf-btn-secondary:hover {
+    background: rgba(15, 23, 42, 0.04);
+  }
+  
+  body.light-mode .nf-meta {
+    color: #94a3b8;
+  }
+  
+  body.light-mode .nf-mini-footer {
+    background: #f4f7fb;
+    border-top-color: rgba(15, 23, 42, 0.08);
+  }
+  
+  body.light-mode .nf-mini-footer a {
+    color: #475569;
+  }
+  
+  body.light-mode .nf-print-lines span {
+    background: #0f172a;
+  }

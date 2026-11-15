@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما | PrinterLand</title>
+    <link rel="stylesheet" href="../style/font.css" />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/images/logo/logo1.png"
+  />
+    <link rel="stylesheet" href="../style/Services.css" />
+    <link rel="stylesheet" href="../style/process.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/custom curser.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/light-mode-fix.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="header-logo" href="../index.html">
+          <div class="logo-mark">✦</div>
+          <span class="logo-text">PrinterLand</span>
+        </a>
+        <nav class="header-nav" id="desktopNav">
+          <a class="nav-link" href="../index.html">خانه</a>
+          <a class="nav-link" href="../products.html">محصولات</a>
+          <a class="nav-link" href="portfolio.html">نمونه‌کارها</a>
+          <a class="nav-link" href="about.html">درباره ما</a>
+          <a class="nav-link active" href="contact.html">تماس با ما</a>
+        </nav>
+        <!-- Dark Mode Toggle -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="تغییر حالت روشنایی"
+        >
+          <span class="theme-icon-desktop">
+            <svg
+              id="themeIconSvg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+          <span class="theme-icon-mobile" aria-hidden="true">🌙</span>
+        </button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="منو"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a class="mobile-nav-link" href="../index.html">خانه</a>
+      <a class="mobile-nav-link" href="../products.html">محصولات</a>
+      <a class="mobile-nav-link" href="portfolio.html">نمونه‌کارها</a>
+      <a class="mobile-nav-link" href="about.html">درباره ما</a>
+      <a class="mobile-nav-link active" href="contact.html">تماس با ما</a>
+    </nav>
+
+    <main>
+      <section class="contact-sec" id="contact">
+        <div class="contact-grid-bg"></div>
+
+        <div class="contact-inner">
+          <!-- Header -->
+          <div class="contact-header">
+            <span class="contact-badge">✦ تماس با ما</span>
+            <h2 class="contact-title">
+              از طریق <span class="contact-title-grad">پیام‌رسان‌ها</span> در
+              ارتباط باشید
+            </h2>
+            <p class="contact-desc">
+              برای ثبت سفارش، مشاوره یا هر سوالی، از طریق یکی از پیام‌رسان‌های
+              زیر پیام بدید؛ در کوتاه‌ترین زمان پاسخ می‌دیم.
+            </p>
+          </div>
+
+          <!-- 2 Cards: Telegram + Rubika -->
+          <div class="contact-cards">
+            <!-- تلگرام -->
+            <div class="contact-card">
+              <div class="contact-card-logo">
+                <img src="../assets/icons/Logo.png" alt="لوگوی تلگرام" />
+              </div>
+              <h3 class="contact-card-name">تلگرام</h3>
+              <p class="contact-card-text">
+                برای پیام دادن روی آیدی زیر کلیک کنید
+              </p>
+              <div class="contact-card-id-row">
+                <span class="contact-card-id" id="contactTelegramId"
+                  >@Your_User_Name</span
+                >
+                <button
+                  class="contact-copy-btn"
+                  data-copy-target="contactTelegramId"
+                  aria-label="کپی آیدی"
+                >
+                  📋
+                </button>
+              </div>
+              <a
+                class="contact-card-btn"
+                href="https://t.me/Your_User_Name"
+                target="_blank"
+                rel="noopener"
+              >
+                پیام در تلگرام
+              </a>
+            </div>
+
+            <!-- روبیکا -->
+            <div class="contact-card">
+              <div class="contact-card-logo">
+                <img src="../assets/icons/minimal.png" alt="لوگوی روبیکا" />
+              </div>
+              <h3 class="contact-card-name">روبیکا</h3>
+              <p class="contact-card-text">
+                برای پیام دادن روی آیدی زیر کلیک کنید
+              </p>
+              <div class="contact-card-id-row">
+                <span class="contact-card-id" id="contactRubikaId"
+                  >@Your_User_Name</span
+                >
+                <button
+                  class="contact-copy-btn"
+                  data-copy-target="contactRubikaId"
+                  aria-label="کپی آیدی"
+                >
+                  📋
+                </button>
+              </div>
+              <a
+                class="contact-card-btn"
+                href="https://rubika.ir/Your_User_Name"
+                target="_blank"
+                rel="noopener"
+              >
+                پیام در روبیکا
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="footer-decor"></div>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- ستون برند -->
+          <div class="footer-col footer-col-brand">
+            <div class="footer-brand-logo">
+              <span class="logo-mark">✦</span>
+              <div>
+                <div class="footer-brand-title"><span>PrinterLand</span></div>
+                <div class="footer-brand-subtitle">
+                  چاپ سه‌بعدی و رنگ‌آمیزی حرفه‌ای
+                </div>
+              </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-brand-text">
+              ما ایده‌های شما را با دقت و کیفیت بالا چاپ و رنگ‌آمیزی می‌کنیم و
+              محصولی منحصربه‌فرد به شما تحویل می‌دهیم.
+            </p>
+          </div>
+
+          <!-- ستون دسترسی سریع -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">دسترسی سریع</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../index.html">
+                  خانه
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="../products.html">
+                  محصولات
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#order-process">
+                  فرآیند ثبت سفارش
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="portfolio.html">
+                  نمونه کارها
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  درباره ما
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  تماس با ما
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ارتباط با ما -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">ارتباط با ما</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span
+                  class="footer-contact-icon"
+                  style="
+                    background: rgba(34, 158, 217, 0.15);
+                    border-color: rgba(34, 158, 217, 0.4);
+                  "
+                >
+                  <svg viewBox="0 0 24 24" fill="#229ed9">
+                    <path
+                      d="M21.05 2.93 2.6 10.1c-1.27.5-1.26 1.2-.23 1.52l4.73 1.48 1.83 5.55c.22.6.37.84.76.84.36 0 .52-.16.72-.36l1.97-1.9 4.1 3.02c.75.42 1.3.2 1.49-.7l2.69-12.7c.27-1.12-.42-1.62-1.61-1.12z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="footer-contact-name">تلگرام</div>
+                  <div class="footer-contact-id">@Your_User_Name</div>
+                </div>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon">
+                  <svg viewBox="0 0 24 24" fill="#4da3ff">
+                    <path
+                      d="M21.05 2.93 2.6 10.1c-1.27.5-1.26 1.2-.23 1.52l4.73 1.48 1.83 5.55c.22.6.37.84.76.84.36 0 .52-.16.72-.36l1.97-1.9 4.1 3.02c.75.42 1.3.2 1.49-.7l2.69-12.7c.27-1.12-.42-1.62-1.61-1.12z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <div class="footer-contact-name">روبیکا</div>
+                  <div class="footer-contact-id">@Your_User_Name</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© ۲۰۲۶ <strong>PrinterLand</strong>. تمامی حقوق محفوظ است.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/custom curser.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>
