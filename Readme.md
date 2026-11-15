@@ -1,7 +1,15 @@
 <p align="center">
+  <img src="docs/banner.svg" alt="PrinterLand banner" width="100%">
+</p>
+
+<p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/html5/html5-original.svg" alt="HTML5" width="48" height="48">&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/css3/css3-original.svg" alt="CSS3" width="48" height="48">&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/javascript/javascript-original.svg" alt="JavaScript" width="48" height="48">
+</p>
+
+<p align="center">
+  <a href="https://kourosh2043.github.io/PrinterLand_Project/"><b>View the live site</b></a>
 </p>
 
 # PrinterLand
@@ -18,6 +26,7 @@ The whole project is static HTML, CSS and vanilla JavaScript. It has no framewor
 | Font | Vazirmatn, 9 weights, bundled as `.woff2` |
 | Themes | Dark (default) and light |
 | Orders | Telegram and Rubika, no backend |
+| Live site | [kourosh2043.github.io/PrinterLand_Project](https://kourosh2043.github.io/PrinterLand_Project/) |
 
 ## Contents
 
@@ -241,6 +250,8 @@ PrinterLand Project/
 ```
 
 ## Run it locally
+
+The site is published at [kourosh2043.github.io/PrinterLand_Project](https://kourosh2043.github.io/PrinterLand_Project/), so you can open it in a browser without downloading anything. To run your own copy:
 
 The product pages load a JSON file with `fetch`, and browsers block that on `file://` addresses. Serve the folder over HTTP instead.
 
