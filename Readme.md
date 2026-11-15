@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="PrinterLand banner" width="100%">
+  <img src="assets/logo/banner.svg" alt="PrinterLand banner" width="100%">
 </p>
 
 <p align="center">
